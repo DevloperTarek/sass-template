@@ -1,0 +1,166 @@
+// Service Area
+.service-card-area {
+    &.style-1{
+        padding: 120px 0;
+    
+        @include rmaxwd(991) {
+            padding: 100px 0;
+        }
+        @include rmaxwd(767) {
+            padding: 80px 0;
+        }
+    }
+}
+// Process-area
+.process-step-area{
+    &.style-2{
+        background-color: $background;
+        .section-title{
+            .short-title,
+            .title{
+                color: $white;
+                span{
+                    color: $white;
+                }
+            }
+        }
+        .process-step{
+            .content{
+                .title,
+                .desc{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+// our-mission-area
+.our-mission-area{
+    .section-title{
+        .title{
+            @include xl{
+                br{
+                  display: none;
+                }
+              }
+        }
+        .desc{
+            @include xl{
+                br{
+                  display: none;
+                }
+              }
+        }
+    }
+    .about-image-card{
+            @include sm{
+                margin-top: 32px;
+            }
+        }
+        .icon-card{
+            .orange{
+                i{
+                    color: $secondary-color;
+                }
+            }
+        }
+        .about-image-card{
+            @include md{
+                margin-top: 48px;
+            }
+            .main-img{
+                border-radius: 12px;
+                overflow: hidden;
+                img{
+                    border-radius: 12px;
+                }
+            }
+        }
+}
+
+// Service-details
+.service-details-wrapper{
+    .image-wrapper{
+        display: flex;
+        gap: 40px;
+        margin: 56px 0;
+        .image{
+            border-radius: 24px;
+            overflow: hidden;
+            @include transition;
+        }
+    }
+}
+.service-details-title{
+    p{
+        margin-bottom: 0;
+    }
+}
+// Service-details End
+
+.service-area{
+    &.style-1{
+        &.style-2{
+            .service-area-inner{
+                .section-title{
+                    margin-bottom: 56px;
+                    @include md{
+                        margin-bottom: 32px;
+                    }
+                }
+                .icon-card-wrapper{
+                    margin-left: 0;
+                    .g-6 {
+                        --bs-gutter-x: 40px;
+                        --bs-gutter-y: 40px;
+                    
+                        @include sm {
+                          --bs-gutter-x: 0;
+                          --bs-gutter-y: 12px;
+                        }
+                        @include md {
+                          --bs-gutter-x: 34px;
+                          --bs-gutter-y: 34px;
+                        }
+                        @include lg{
+                            --bs-gutter-x: 16px;
+                          --bs-gutter-y: 16px;
+                        }
+                    }
+                    .icon-card{
+                        &.style-2{
+                            @include md{
+                                // margin-top: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// why-choose-area
+.why-choose-area{
+    &.style-4{
+      position: relative;
+      .about-info-card{
+        &.style-2{
+          @include rmaxwd(919){
+            margin-top: 48px;
+          }
+          .section-title{
+            margin-bottom: 0;
+            @include rmaxwd (991){
+                text-align: start;
+                align-items: start;
+            }
+          }
+        }
+        @include rmaxwd(991){
+          margin-bottom: 40px;
+        }
+      }
+      
+    }
+  }

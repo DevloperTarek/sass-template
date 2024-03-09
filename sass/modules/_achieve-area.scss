@@ -1,0 +1,180 @@
+.achieve-area{
+    position: relative;
+    .star{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: unset;
+        @include rmaxwd(991){
+            display: none;
+        }
+    }
+    .content{
+        &.style-3{
+            padding-right: 75px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+            z-index: 1;
+            // width: 50%;
+            @include xl{
+                padding-right: 24px;
+            }
+            @include lg{
+                padding-right: 24px;
+            }
+            @include md{
+                text-align: center;
+                padding: 0 78px 50px 78px;
+                border-color: transparent;
+                border-bottom: 1px solid $border;
+            }
+            @include sm{
+                margin: 0 24px;
+                padding-right: 0;
+                border-right: transparent;
+                border-bottom: 1px solid $border;
+                padding-bottom: 24px;
+            }
+            .title{
+                margin-bottom: 8px;
+                color: $white;
+            }
+            .desc{
+                margin-bottom: 0;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27px;
+                color: $white;
+                br{
+                    @include xl{
+                            display: none;
+                        }
+                        @include sm{
+                            display: none;   
+                        }
+                }
+            }
+        }
+     
+    }
+    
+    .achieve-item-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        padding-left: 90px;
+        @include xl{
+            padding-left: 70px;
+            gap: 24px;
+        }
+        @include lg{
+            padding-left: 24px;
+            gap: 12px;
+        }
+        @include md{
+            padding-left: 0;
+            margin-top: 50px;
+            justify-content: center;
+        }
+        @include sm{
+            // flex-direction: column;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 28px;
+            padding-left: 0;
+            margin: 24px;
+        }
+        .single-item{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+            .content{
+                h2{
+                    color: $white;
+                    margin-bottom: 0;
+                }
+                p{
+                    margin-bottom: 0;
+                    margin-top: 2px;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 27px; 
+                }
+            }
+            .stars{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+    &.style-2{
+        .content{
+            .desc{
+                br{
+                    @include sm{
+                        display: none;
+                    }
+                }
+            }
+            &.style-3{
+                padding-right: 0;
+                padding-left: 105px;
+                border-right: transparent;
+                border-left: 1px solid rgba(255, 255, 255, 0.15);
+                @include sm{
+                    padding-left: 0;
+                    border: none;
+                    padding-bottom: 0;
+                    padding-top: 50px;
+                    border-top: 1px solid $border;
+                }
+                @include lg{
+                    padding-left: 24px;
+                }
+            }
+        }
+        .divider{
+            width: 1px;
+            height: 136px;
+            background-color: rgba(255, 255, 255, 0.15);
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include rmaxwd(991){
+                width: 100%;
+                height: 1px;
+            }
+        }
+        .achieve-item-wrapper{
+            padding-left: 0;
+            padding-right: 75px;
+            @include sm{
+                padding-right: 0;
+                margin-bottom: 50px;
+                margin-top: 0;
+            }
+            @include md{
+                padding-right: 0;
+            }
+            @include lg{
+                padding-right: 0;
+            }
+        }
+        .elementor-container{
+            .content{
+                &.style-3{
+                    padding-left: 130px;
+                }
+            }
+        }
+    }
+    .elementor-column{
+        .star{
+        width: auto !important;
+        transform: translate(109%, -33%);
+        }
+    }
+}

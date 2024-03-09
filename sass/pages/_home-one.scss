@@ -1,0 +1,449 @@
+// About-us-area style-1
+.about-us-area {
+  &.style-1 {
+    overflow: hidden;
+
+    @include sm {
+      overflow: unset;
+      padding-top: 100px;
+    }
+    @include md{
+      padding-top: 100px;
+    }
+    .about-image-card{
+      padding-right: 144px;
+      @include xl{
+        padding: 48px;
+      }
+      @include lg{
+        padding-right: 48px;
+      }
+      @include sm{
+        padding-right: 24px;
+      }
+      .main-img{
+        margin-left: 48px;
+        @include sm{
+          margin-left: 24px;
+        }
+        @include lg{
+          margin-left: 0;
+        }
+        @include xl{
+          margin-left: 0;
+        }
+        img{
+          width: 100%;
+          @include md{
+            width: auto;
+          }
+        }
+        @include md{
+          transform: translate(15%, 0);
+        }
+      }
+      .center{
+        @include md{
+          transform: translate(45%, 45%);
+        }
+        @include lg{
+          transform: translate(37%, 37%);
+        }
+      }
+    }
+    .about-info-card{
+      margin-left: -4px;
+      .section-title{
+        margin-top: -5px;
+        .title{
+          br{
+            @include rwd (991){
+              display: none;
+            }
+          }
+        }
+        .desc{
+          padding-right: 12px;
+          line-height: 32px;
+          @include sm{
+            margin-top: 0;
+          }
+          br{
+            @include xl{
+              display: none;
+            }
+          }
+        }
+      }
+      .icon-card{
+        .icon{
+          border-color: transparent;
+        }
+      }
+      @include rmaxwd(991){
+        margin-top: 80px;
+      }
+    }
+
+  }
+}
+// service-area
+.service-area {
+  overflow: hidden;
+  .section-title{
+    position: relative;
+    .shape{
+      position: absolute;
+      bottom: -40%;
+      right: 30%;
+      animation: rubberBand 5s linear infinite;
+      @include rmaxwd(1440){
+        display: none;
+      }
+    }
+    .btn-wrapper{
+      margin-top: 24px;
+    }
+  }
+  .icon-card-wrapper{
+    .icon-card{
+      &.style-2{
+        @include xl{
+          padding: 40px 38px;
+        }
+      }
+    }
+  }
+}
+// portfolio-slider-area style-1
+.portfolio-slider-area{
+  &.style-1{
+    padding: 121px 0;
+    background-color: #FBF8EE ;
+    .section-title{
+      .title{
+        .underline{
+          img{
+            bottom: 0;
+          }
+        }
+      }
+    }
+    .theme-btn{
+      margin-right: 5px;
+    }
+    @include sm{
+      padding: 80px 0;
+    }
+    @include md{
+      padding: 100px 0;
+    }
+    .section-title{
+      .title{
+        padding-right: 30px;
+        @include sm{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+// Testimonial-slider-area style-1
+.testimonial-slider-area{
+  // padding: 121px 0;
+  // @include sm{
+  //   padding-top:  80px;
+  //   padding-bottom: 80px;
+  // }
+  // @include md{
+  //   padding-top: 100px;
+  //   padding-bottom: 100px;
+  // }
+}
+// Client-logo-area 
+.client-logo-area{
+  padding-top: 120px;
+  @include sm{
+    padding-top: 100px;
+  }
+}
+// Why-choose-area 
+.why-choose-area{
+  &.style-1{
+    background-color: $background-3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    .shape{
+      position: absolute;
+      top: 0;
+      right: 0;
+      animation: MoveTopRight 4s infinite ease-in-out;
+    }
+    .sketch{
+      position: absolute;
+      bottom: 70px;
+      right: 104px;
+      transform: translate(-50%, -50%);
+      animation: WhyChooseLeftRight 2s linear infinite alternate;
+      @-webkit-keyframes WhyChooseLeftRight {
+        0% { transform: translate(-50%, -50%); }
+        100% { transform: translate(-40%, -50%); }
+      }
+      @keyframes WhyChooseLeftRight {
+        0% { transform: translate(-50%, -50%); }
+        100% { transform: translate(-40%, -50%); }
+      }
+      @include rmaxwd(991){
+        display: none;
+      }
+    }
+    .about-info-card{
+      margin-left: 9px;
+      margin-top: 5px;
+      margin-right: 9px;
+      // .desc{
+      //   padding-right: 20px;
+      // }
+      @include rmaxwd(991){
+        margin: 40px 14px 0 14px;
+      }
+      .list-item-wrapper{
+        ul{
+          li{
+            @include md{
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    .btn-wrapper{
+      margin-top: 40px;
+      @include rmaxwd(991){
+        text-align: center;
+      }
+      .theme-btn{
+        @include sm{
+        }
+      }
+    }
+    .section-title{
+      .title{
+        br{
+          @include xl{
+            display: none;
+          }
+        }
+      }
+      .desc{
+        br{
+          @include xl{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.process-step-area {
+  &.style-1 {
+      overflow: hidden;
+      // background-color: #F9F9F9;
+      .section-title{
+        margin-bottom: 24px;
+        @include sm{
+          margin-bottom: 0;
+        }
+      }
+      .elementor-container{
+        .inner-wrapper{
+          .shape-one{
+            width: auto !important;
+          }
+          .shape-two{
+            width: auto !important;
+          }
+        }
+      }
+  }
+}
+
+// Latest-post-area
+.latest-post-area{
+  &.style-1{
+    .post-card-wrapper{
+      margin-top: 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+// Team-area Style-1
+.team-area{
+  &.style-1,
+  &.style-3{
+    position: relative;
+    .shape-one{
+      position: absolute;
+      top: 22%;
+      left: 9%;
+      animation: rubberBand 5s linear infinite;
+      @include rmaxwd(1199){
+          display: none;
+      }
+      @include xl{
+        left: 5%;
+      }
+  }
+  .shape-two{
+    position: absolute;
+    top: 18%;
+    right: 13%;
+    animation: bounce 5s linear infinite;
+    @include rmaxwd(1199){
+        display: none;
+    }
+    @include xl{
+      right: 7%;
+    }
+  }
+    .section-title{
+      margin-top: -10px;
+      .title{
+        br{
+          @include md{
+            display: none;
+          }
+          @include lg{
+            display: none;
+          }
+        }
+      }
+      .desc{
+        br{
+          @include md{
+            display: none;
+          }
+        }
+      }
+    }
+      .team-member-card{
+        margin-top: 56px;
+        &:first-child{
+          @include sm{
+            margin-top: 32px;
+          }
+        }
+      }
+      .team-member-wrapper{
+        .elementor-container{
+          .elementor-column{
+            .elementor-widget-wrap{
+              padding: 0 16px !important;
+            }
+          }
+        }
+      }
+      .elementor-container{
+        .shape-two{
+          width: auto !important;
+          right: 4%;
+          top: 62px;
+        }
+        .shape-one{
+          width: auto !important;
+          left: -7%;
+          top: 100px;
+        }
+      }
+  }
+}
+// Pricing-area 
+.pricing-area{
+  &.style-1{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
+      .section-title{
+          // margin-bottom: 56px;
+          // @include rmaxwd(1199){
+          //     margin-bottom: 42px;
+          // }
+      }
+      .shape{
+        position: absolute;
+        top: 13%;
+        left: 65px;
+        // transform: translate(-50%, -50%);
+        @include rmaxwd(991){
+            display: none;
+        }
+        @include lg{
+            display: none;
+        }
+        @include xl{
+            display: none;
+        }
+    }
+    .elementor-container{
+      .shape{
+        top: 2%;
+        left: -17%;
+        width: auto !important;    
+      }
+    }
+  }
+}
+// FAQ-area
+.faq-area{
+  &.style-1{
+    padding: 120px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:before{
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../images/shape/faq-bg.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .accordion{
+      margin-top: 56px;
+      .accordion-item{
+        z-index: 1;
+      }
+    }
+      @include sm{
+        padding: 80px 0;
+      }
+      @include md{
+        padding: 100px 0;
+      }
+    // .faq-bg{
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   left: 0;
+    //   right: 0;
+    //   top: 0;
+    //   background-size: cover;
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    // }
+  }
+}

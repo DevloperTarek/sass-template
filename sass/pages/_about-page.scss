@@ -1,0 +1,158 @@
+// about-us-area
+.about-us-area{
+  &.style-3{
+    @include sm{
+      padding-bottom: 54px;
+    }
+    .about-info-card{
+      @include xl{
+        padding-left: 40px;
+      }
+      @include sm{
+        margin-top: 32px;
+      }
+      .section-title{
+        .title{
+          @include xl{
+            font-size: 50px;
+          }
+        }
+      }
+      .icon-card-wrapper{
+        @include sm{
+          margin-top: 30px;
+        }
+
+      }
+    }
+  }
+}
+
+// why-choose-area
+.why-choose-area{
+  &.style-3{
+    position: relative;
+    &:before{
+      content: "";
+      width: 87%;
+      height: 1px;
+      background-color: #E4E4E7;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 0;
+    }
+    .about-info-card{
+      &.style-2{
+        @include rmaxwd(919){
+          margin-top: 48px;
+        }
+        .section-title{
+          margin-bottom: 0;
+          @include rmaxwd (991){
+              text-align: start;
+              align-items: start;
+          }
+        }
+      }
+      @include rmaxwd(991){
+        margin-bottom: 40px;
+      }
+    }
+    
+  }
+}
+.team-area {
+  &.style-3{
+    position: relative;
+    &:before{
+      content: "";
+      width: 87%;
+      height: 1px;
+      background-color: #E4E4E7;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 0;
+    }
+  }
+}
+
+// faq-area
+.faq-area{
+  &.style-3{
+    background: var(--gradient, linear-gradient(76deg, #ECEAFF 0%, #FFF 140.02%));
+  }
+}
+// Testimonial-area
+.testimonial-area{
+    .testimonial-slider-two{
+      .testimonial-arrow-btn {
+        position: absolute;
+        right: 0;
+        top: -56px;
+        &.prev-btn{
+          right: 68px;
+          @include rmaxwd(991){
+            right: 51%;
+            left: unset;
+          }
+        }
+        &.next-btn{
+          @include rmaxwd(991){
+            left: 51%;
+            right: unset;
+          }
+        }
+        @include rmaxwd(991){
+          right: 50%;
+          top: unset;
+          bottom: -32px;
+
+        }
+      }
+      .slick-list{
+        padding: 0 !important;
+        @include sm{
+          height: 504px;
+        }
+        @include md{
+          height: 504px;
+        }        
+        @include lg{
+          height: 504px;
+        }        
+        @include xl{
+          height: 504px;
+        }        
+      }
+
+    }
+    .icon-card{
+      &.style-2{
+        margin: 56px 12px;
+        gap: 16px;
+        padding: 38px;
+        display: flex !important;
+        @include transition;
+        @include rmaxwd(991){
+          &:first-child{
+            margin-top: 0;
+          }
+          margin-top: 24px;
+        }
+        
+          .meta-user{
+            margin-top: 16px;
+          }
+      }
+      &.slick-active{
+        border: 1px solid $border;
+        box-shadow: none;
+      }
+      &.slick-center{
+        border-color: transparent;
+        box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.20);
+      }
+    }
+}
